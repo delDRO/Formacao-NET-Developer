@@ -1,5 +1,4 @@
 # Desafio de Programação Orientada a Objetos
-
 Projeto de exemplo desenvolvido como exercício de Programação Orientada a Objetos (POO) no curso Formação .NET Developer.
 
 ## Descrição
