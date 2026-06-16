@@ -396,3 +396,18 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+
+# Garantir que pastas de build sejam ignoradas recursivamente
+**/bin/
+**/obj/
+
+# Arquivos de sistema e logs
+.DS_Store
+Thumbs.db
+*.log
+
+# VS Code workspace (manter configurações compartilhadas)
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
