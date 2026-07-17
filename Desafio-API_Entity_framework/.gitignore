@@ -1,0 +1,86 @@
+## .gitignore para projeto .NET / ASP.NET Core com Entity Framework
+
+# ──────────────────────────────────────────────
+# Build / compilação
+# ──────────────────────────────────────────────
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# ──────────────────────────────────────────────
+# Visual Studio / Rider
+# ──────────────────────────────────────────────
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.userprefs
+.idea/
+
+# ──────────────────────────────────────────────
+# NuGet
+# ──────────────────────────────────────────────
+*.nupkg
+*.snupkg
+.nuget/
+packages/
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# ──────────────────────────────────────────────
+# Banco de dados SQLite (Entity Framework)
+# ──────────────────────────────────────────────
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+
+# ──────────────────────────────────────────────
+# Arquivos de publicação / deploy
+# ──────────────────────────────────────────────
+[Pp]ublish/
+PublishProfiles/
+*.pubxml
+*.pubxml.user
+
+# ──────────────────────────────────────────────
+# Variáveis de ambiente / segredos
+# ──────────────────────────────────────────────
+.env
+.env.*
+!.env.example
+appsettings.Development.json
+secrets.json
+**/secrets.json
+
+# ──────────────────────────────────────────────
+# Arquivos de cobertura de testes
+# ──────────────────────────────────────────────
+coverage/
+*.coverage
+*.coveragexml
+TestResults/
+
+# ──────────────────────────────────────────────
+# Arquivos temporários do SO
+# ──────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# ──────────────────────────────────────────────
+# JetBrains Rider
+# ──────────────────────────────────────────────
+.idea/
+*.sln.iml
+
+# ──────────────────────────────────────────────
+# Outros
+# ──────────────────────────────────────────────
+*.bak
+*.tmp
+*.temp
