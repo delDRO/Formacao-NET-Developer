@@ -1,6 +1,6 @@
 # 💻 Formação .NET Developer - Desafios de Projeto (DIO)
 
-Este repositório contém a resolução dos desafios de projeto desenvolvidos durante o bootcamp **Formação .NET Developer** da [Digital Innovation One (DIO)](https://www.dio.me). Os projetos cobrem desde os fundamentos da linguagem C# até conceitos avançados de Programação Orientada a Objetos (POO).
+Este repositório contém a resolução dos desafios de projeto desenvolvidos durante o bootcamp **Formação .NET Developer** da [Digital Innovation One (DIO)](https://www.dio.me). Os projetos cobrem desde os fundamentos da linguagem C# até conceitos avançados de APIs REST com Entity Framework e consultas relacionais em SQL Server.
 
 ---
 
@@ -12,7 +12,9 @@ O repositório é dividido nas seguintes pastas, cada uma representando um desaf
 | :--- | :--- | :--- |
 | [🚗 Desafio Fundamentos](./Desafio%20Fundamentos/) | Sistema de gerenciamento de um estacionamento para controlar a entrada, saída e tarifas de veículos. | C#, Lógica de Programação, Estruturas de Repetição, Coleções |
 | [🏨 Desafio de Hospedagem](./Desafio%20de%20projeto-Construindo%20um%20sistema%20de%20hospedagem%20de%20um%20hotel%20no%20C%23/) | Sistema de reservas para um hotel com validação de capacidade de suítes e cálculo de diárias com desconto. | C#, Coleções, Manipulação de Strings, Operadores, Exceções |
-| [📱 Desafio POO](./Desafio-Programação-Orientada%20a%20Objetos/) | Modelagem do comportamento de smartphones (Nokia e iPhone) utilizando herança, encapsulamento e polimorfismo. | C#, Programação Orientada a Objetos (POO), Herança, Abstração |
+| [📱 Desafio POO](./Desafio-Programação-Orientada%20a%20Objetos/) | Modelagem do comportamento de smartphones (Nokia e iPhone) utilizando herança, encapsulamento e polimorfismo. | C#, POO, Herança, Abstração |
+| [📋 Desafio API + Entity Framework](./Desafio-API_Entity_framework/) | Sistema Gerenciador de Tarefas com CRUD completo via Web API RESTful e banco de dados SQLite gerenciado pelo EF Core. | ASP.NET Core, Entity Framework Core, SQLite, Swagger |
+| [🗃️ Desafio SQL Server](./Desafios%20de%20Projeto%20Montando%20consultas%20relacionais%20no%20SQL%20Server/) | Consultas relacionais em SQL Server baseadas nos desafios propostos pela DIO, abrangendo JOINs, agregações e filtros. | SQL Server, T-SQL, Consultas Relacionais, JOINs |
 
 ---
 
@@ -39,6 +41,29 @@ O repositório é dividido nas seguintes pastas, cada uma representando um desaf
   * Criação das classes derivadas `Nokia` e `Iphone`.
   * Sobrescrita do método abstrato `InstalarAplicativo` para comportamentos específicos de cada marca.
 
+### 4. [Desafio API + Entity Framework](./Desafio-API_Entity_framework/)
+* **Objetivo:** Construir um **Sistema Gerenciador de Tarefas** com CRUD completo usando ASP.NET Core Web API e Entity Framework Core.
+* **Tecnologias:** ASP.NET Core (.NET 10), Entity Framework Core, SQLite, Swagger/OpenAPI.
+* **Funcionalidades:**
+  * Endpoints REST para criar, listar, buscar, atualizar e deletar tarefas (`POST`, `GET`, `PUT`, `DELETE`).
+  * Filtros de busca por **título**, **data** e **status** (Pendente, Em Andamento, Concluído).
+  * Banco de dados **SQLite** criado automaticamente na inicialização via `Database.Migrate()`.
+  * Documentação interativa disponível via **Swagger UI**.
+* **Para executar:**
+  ```bash
+  cd Desafio-API_Entity_framework/TarefasApi
+  dotnet run
+  ```
+  Acesse `https://localhost:{porta}/swagger` para explorar os endpoints.
+
+### 5. [Desafio SQL Server](./Desafios%20de%20Projeto%20Montando%20consultas%20relacionais%20no%20SQL%20Server/)
+* **Objetivo:** Desenvolver consultas relacionais no SQL Server com resultados equivalentes aos propostos no desafio da DIO.
+* **Referência:** [Repositório oficial do desafio](https://github.com/digitalinnovationone/trilha-net-banco-de-dados-desafio)
+* **Conceitos praticados:**
+  * Consultas com `JOIN` entre múltiplas tabelas.
+  * Uso de funções de agregação (`COUNT`, `SUM`, `AVG`).
+  * Filtros com `WHERE`, `GROUP BY` e `ORDER BY`.
+
 ---
 
 ## 🚀 Como Executar os Projetos
@@ -46,6 +71,7 @@ O repositório é dividido nas seguintes pastas, cada uma representando um desaf
 ### Pré-requisitos
 Certifique-se de ter instalado em sua máquina:
 * [.NET SDK](https://dotnet.microsoft.com/download) (versão 6.0 ou superior recomendada)
+* [SQL Server](https://www.microsoft.com/sql-server) (para o desafio de banco de dados)
 
 ### Instruções para rodar localmente
 1. Clone este repositório em sua máquina:
